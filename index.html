@@ -7,6 +7,12 @@
   <meta name="description" content="BeeWorks delivers trusted, insured cleaning for homes, offices and commercial spaces across Sydney. Get a free quote in 60 seconds.">
   <link rel="canonical" href="https://beeworks.com.au/">
 
+  <!-- Preconnect for faster CDN handshake -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="dns-prefetch" href="https://images.unsplash.com">
+
   <!-- Open Graph -->
   <meta property="og:title" content="BeeWorks | Professional Cleaning Services">
   <meta property="og:description" content="Trusted, insured cleaning for homes, offices and commercial spaces across Sydney.">
@@ -14,12 +20,12 @@
   <meta property="og:image" content="https://beeworks.com.au/images/og-cover.jpg">
   <meta property="og:url" content="https://beeworks.com.au/">
 
-  <link rel="icon" href="images/favicon.png" type="image/png">
+  <!-- Inline SVG favicon (no 404) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2318a84a'/%3E%3Cpath d='M20 44V24l12-8 12 8v20' stroke='%23fff' stroke-width='4' fill='none' stroke-linejoin='round'/%3E%3C/svg%3E">
 
-  <!-- Bootstrap 5 -->
+  <!-- Bootstrap 5 (defer JS below; CSS is render-blocking by nature) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
   <!-- Custom CSS (single load) -->
   <link rel="stylesheet" href="css/style.css">
@@ -55,7 +61,6 @@
 </head>
 <body>
 
-<!-- Skip link for accessibility -->
 <a href="#main" class="skip-link">Skip to content</a>
 
 <!-- TOP TRUST BAR -->
@@ -76,7 +81,7 @@
 <nav class="navbar navbar-expand-lg beeworks-navbar sticky-top" aria-label="Main navigation">
   <div class="container">
     <a class="navbar-brand brand-logo" href="#home">
-      <img src="images/logo.png" alt="BeeWorks Cleaning Services" class="custom-logo" width="190" height="60">
+      <img src="images/logo.png" alt="BeeWorks Cleaning Services" class="custom-logo" width="190" height="60" fetchpriority="high">
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
@@ -134,7 +139,7 @@
 <section class="hero-section" id="home">
   <div class="container">
     <div class="row align-items-center g-5">
-      <div class="col-lg-6 hero-content">
+      <div class="col-lg-6 hero-content reveal">
         <span class="hero-badge"><i class="bi bi-stars" aria-hidden="true"></i> Sydney's Trusted Cleaning Team</span>
         <h1>A Cleaner Space,<br><span>A Healthier You.</span></h1>
         <p>BeeWorks delivers insured, professional cleaning for homes, offices and commercial spaces. Book online in 60 seconds — no contracts, no surprises.</p>
@@ -145,16 +150,20 @@
         </div>
         <br>
         <ul class="trust-features">
-  <li><i class="bi bi-patch-check-fill" aria-hidden="true"></i><span>Fully Insured</span></li>
-  <li><i class="bi bi-person-badge-fill" aria-hidden="true"></i><span>Police-Checked</span></li>
-  <li><i class="bi bi-leaf" aria-hidden="true"></i><span>Eco-Friendly</span></li>
-  <li><i class="bi bi-star-fill" aria-hidden="true" style="color: #f5b301;"></i><span>4.9★ Rated</span></li>
-</ul>
+          <li><i class="bi bi-patch-check-fill" aria-hidden="true"></i><span>Fully Insured</span></li>
+          <li><i class="bi bi-person-badge-fill" aria-hidden="true"></i><span>Police-Checked</span></li>
+          <li><i class="bi bi-leaf" aria-hidden="true"></i><span>Eco-Friendly</span></li>
+          <li><i class="bi bi-star-fill" aria-hidden="true" style="color: #f5b301;"></i><span>4.9★ Rated</span></li>
+        </ul>
       </div>
 
-      <div class="col-lg-6">
+      <div class="col-lg-6 reveal">
         <div class="hero-image-wrapper">
-          <img src="images/herosec.png" alt="BeeWorks professional cleaner at work" class="hero-image" width="700" height="470" fetchpriority="high">
+          <img src="images/herosec.webp"
+               alt="BeeWorks professional cleaner at work"
+               class="hero-image"
+               width="700" height="470"
+               fetchpriority="high" decoding="async">
           <div class="image-label">
             <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
             <div><strong>100% Satisfaction Guarantee</strong><small>We'll re-clean for free if you're not happy</small></div>
@@ -166,7 +175,7 @@
 </section>
 
 <!-- TRUST STRIP -->
-<section class="trust-strip" aria-label="Trust indicators">
+<section class="trust-strip reveal" aria-label="Trust indicators">
   <div class="container">
     <div class="row text-center g-3">
       <div class="col-6 col-md-3"><strong>2,500+</strong><span>Jobs Completed</span></div>
@@ -181,9 +190,10 @@
 <section class="about-section" id="about">
   <div class="container">
     <div class="row align-items-center g-5">
-      <div class="col-lg-6">
+      <div class="col-lg-6 reveal">
         <div class="about-image-wrapper">
-          <img src="images/clean.webp" alt="BeeWorks cleaning team at a client site" class="about-image" loading="lazy" width="600" height="440">
+          <img src="images/clean.webp" alt="BeeWorks cleaning team at a client site"
+               class="about-image" loading="lazy" decoding="async" width="600" height="440">
           <div class="about-experience">
             <i class="bi bi-award" aria-hidden="true"></i>
             <div><strong>Locally Owned</strong><span>Servicing Sydney since 2013</span></div>
@@ -191,7 +201,7 @@
         </div>
       </div>
 
-      <div class="col-lg-6">
+      <div class="col-lg-6 reveal">
         <div class="about-content">
           <span class="about-tag"><i class="bi bi-house-heart" aria-hidden="true"></i> ABOUT BEEWORKS</span>
           <h2>We Make Every Space <span>Fresh &amp; Beautiful</span></h2>
@@ -222,15 +232,14 @@
 <!-- SERVICES -->
 <section class="bw-services" id="services">
   <div class="container">
-    <div class="bw-services-header">
+    <div class="bw-services-header reveal">
       <div class="bw-eyebrow"><span></span> OUR EXPERTISE <span></span></div>
       <h2>Cleaning Solutions for <span>Every Space.</span></h2>
       <p>From everyday cleaning to specialist care, we help keep your home and workplace fresh, spotless and welcoming.</p>
     </div>
 
     <div class="row g-4">
-      <!-- 6 service cards unchanged structurally; alt + loading added -->
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4 reveal">
         <article class="bw-service-card">
           <div class="bw-service-photo photo-commercial"><span class="bw-service-count">01</span><span class="bw-photo-icon"><i class="bi bi-building" aria-hidden="true"></i></span></div>
           <div class="bw-service-body">
@@ -241,7 +250,7 @@
           </div>
         </article>
       </div>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4 reveal">
         <article class="bw-service-card">
           <div class="bw-service-photo photo-residential"><span class="bw-service-count">02</span><span class="bw-photo-icon"><i class="bi bi-house-heart" aria-hidden="true"></i></span></div>
           <div class="bw-service-body">
@@ -252,7 +261,7 @@
           </div>
         </article>
       </div>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4 reveal">
         <article class="bw-service-card">
           <div class="bw-service-photo photo-construction"><span class="bw-service-count">03</span><span class="bw-photo-icon"><i class="bi bi-tools" aria-hidden="true"></i></span></div>
           <div class="bw-service-body">
@@ -263,7 +272,7 @@
           </div>
         </article>
       </div>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4 reveal">
         <article class="bw-service-card">
           <div class="bw-service-photo photo-carpet"><span class="bw-service-count">04</span><span class="bw-photo-icon"><i class="bi bi-layers" aria-hidden="true"></i></span></div>
           <div class="bw-service-body">
@@ -274,7 +283,7 @@
           </div>
         </article>
       </div>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4 reveal">
         <article class="bw-service-card">
           <div class="bw-service-photo photo-windows"><span class="bw-service-count">05</span><span class="bw-photo-icon"><i class="bi bi-window" aria-hidden="true"></i></span></div>
           <div class="bw-service-body">
@@ -285,7 +294,7 @@
           </div>
         </article>
       </div>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4 reveal">
         <article class="bw-service-card">
           <div class="bw-service-photo photo-pressure"><span class="bw-service-count">06</span><span class="bw-photo-icon"><i class="bi bi-droplet-half" aria-hidden="true"></i></span></div>
           <div class="bw-service-body">
@@ -298,7 +307,7 @@
       </div>
     </div>
 
-    <div class="bw-services-bottom">
+    <div class="bw-services-bottom reveal">
       <div class="bw-bottom-icon"><i class="bi bi-chat-dots" aria-hidden="true"></i></div>
       <div class="bw-bottom-text">
         <h3>Not sure which service you need?</h3>
@@ -312,12 +321,12 @@
 <!-- HOW IT WORKS -->
 <section class="how-it-works">
   <div class="container">
-    <div class="text-center mb-5">
+    <div class="text-center mb-5 reveal">
       <span class="section-label">HOW IT WORKS</span>
       <h2 class="section-title">Three Steps to a <span>Cleaner Space</span></h2>
     </div>
     <div class="row g-4 text-center">
-      <div class="col-md-4">
+      <div class="col-md-4 reveal">
         <div class="step-card">
           <div class="step-number">1</div>
           <i class="bi bi-clipboard-check step-icon" aria-hidden="true"></i>
@@ -325,7 +334,7 @@
           <p>Tell us your space, suburb and preferred time. Get a fixed quote within 24 hours.</p>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 reveal">
         <div class="step-card">
           <div class="step-number">2</div>
           <i class="bi bi-person-check step-icon" aria-hidden="true"></i>
@@ -333,7 +342,7 @@
           <p>Your police-checked cleaner arrives with all equipment and eco-friendly products.</p>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 reveal">
         <div class="step-card">
           <div class="step-number">3</div>
           <i class="bi bi-emoji-smile step-icon" aria-hidden="true"></i>
@@ -348,7 +357,7 @@
 <!-- INDUSTRIES -->
 <section class="bw-industries" id="industries">
   <div class="container">
-    <div class="bw-industries-top">
+    <div class="bw-industries-top reveal">
       <div class="bw-industries-heading">
         <span class="bw-industries-tag"><i class="bi bi-grid" aria-hidden="true"></i> INDUSTRIES WE SERVE</span>
         <h2>Every Industry Deserves <span>a Cleaner Standard.</span></h2>
@@ -358,8 +367,7 @@
     </div>
 
     <div class="row g-3">
-      <!-- Six industry cards kept in original design; only alt/aria refined -->
-      <div class="col-6 col-lg-4">
+      <div class="col-6 col-lg-4 reveal">
         <a href="#contact" class="bw-industry-card">
           <div class="bw-industry-icon"><i class="bi bi-building" aria-hidden="true"></i></div>
           <div class="bw-industry-info">
@@ -368,7 +376,7 @@
           <i class="bi bi-arrow-up-right bw-industry-arrow" aria-hidden="true"></i>
         </a>
       </div>
-      <div class="col-6 col-lg-4">
+      <div class="col-6 col-lg-4 reveal">
         <a href="#contact" class="bw-industry-card">
           <div class="bw-industry-icon"><i class="bi bi-hospital" aria-hidden="true"></i></div>
           <div class="bw-industry-info">
@@ -377,7 +385,7 @@
           <i class="bi bi-arrow-up-right bw-industry-arrow" aria-hidden="true"></i>
         </a>
       </div>
-      <div class="col-6 col-lg-4">
+      <div class="col-6 col-lg-4 reveal">
         <a href="#contact" class="bw-industry-card">
           <div class="bw-industry-icon"><i class="bi bi-shop" aria-hidden="true"></i></div>
           <div class="bw-industry-info">
@@ -386,7 +394,7 @@
           <i class="bi bi-arrow-up-right bw-industry-arrow" aria-hidden="true"></i>
         </a>
       </div>
-      <div class="col-6 col-lg-4">
+      <div class="col-6 col-lg-4 reveal">
         <a href="#contact" class="bw-industry-card">
           <div class="bw-industry-icon"><i class="bi bi-balloon-heart" aria-hidden="true"></i></div>
           <div class="bw-industry-info">
@@ -395,7 +403,7 @@
           <i class="bi bi-arrow-up-right bw-industry-arrow" aria-hidden="true"></i>
         </a>
       </div>
-      <div class="col-6 col-lg-4">
+      <div class="col-6 col-lg-4 reveal">
         <a href="#contact" class="bw-industry-card">
           <div class="bw-industry-icon"><i class="bi bi-cup-hot" aria-hidden="true"></i></div>
           <div class="bw-industry-info">
@@ -404,7 +412,7 @@
           <i class="bi bi-arrow-up-right bw-industry-arrow" aria-hidden="true"></i>
         </a>
       </div>
-      <div class="col-6 col-lg-4">
+      <div class="col-6 col-lg-4 reveal">
         <a href="#contact" class="bw-industry-card">
           <div class="bw-industry-icon"><i class="bi bi-heart-pulse" aria-hidden="true"></i></div>
           <div class="bw-industry-info">
@@ -417,38 +425,38 @@
   </div>
 </section>
 
-<!-- REVIEWS / TESTIMONIALS (NEW — CRITICAL FOR TRUST) -->
+<!-- REVIEWS -->
 <section class="reviews-section" id="reviews">
   <div class="container">
-    <div class="text-center mb-5">
+    <div class="text-center mb-5 reveal">
       <span class="section-label">CLIENT REVIEWS</span>
       <h2 class="section-title">What Our Clients <span>Say</span></h2>
       <p class="section-sub">Real feedback from homes and businesses across Sydney.</p>
     </div>
     <div class="row g-4">
-      <div class="col-md-4">
+      <div class="col-md-4 reveal">
         <div class="review-card">
-          <div class="review-stars">★★★★★</div>
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
           <p>"BeeWorks has cleaned our office for two years. Same team, always on time, and the difference when we walk in on Monday is night and day."</p>
           <div class="review-author"><strong>Sarah M.</strong><span>Office Manager, Surry Hills</span></div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 reveal">
         <div class="review-card">
-          <div class="review-stars">★★★★★</div>
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
           <p>"They did a post-renovation clean that honestly made our new kitchen look better than the showroom. Worth every dollar."</p>
           <div class="review-author"><strong>Daniel K.</strong><span>Homeowner, Bondi</span></div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 reveal">
         <div class="review-card">
-          <div class="review-stars">★★★★★</div>
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
           <p>"As a childcare centre, hygiene is non-negotiable. BeeWorks provides documentation, uses safe products, and our families notice the difference."</p>
           <div class="review-author"><strong>Priya R.</strong><span>Director, Little Bees Early Learning</span></div>
         </div>
       </div>
     </div>
-    <div class="text-center mt-4">
+    <div class="text-center mt-4 reveal">
       <a href="https://g.page/r/your-google-review-link" target="_blank" rel="noopener" class="btn outline-btn">
         <i class="bi bi-google" aria-hidden="true"></i> Read all 230+ reviews on Google
       </a>
@@ -460,7 +468,7 @@
 <section class="bw-why">
   <div class="container">
     <div class="bw-why-layout">
-      <div class="bw-why-content">
+      <div class="bw-why-content reveal">
         <span class="bw-why-label">WHY BEEWORKS</span>
         <h2>A Cleaner Space.<br><span>A Better Experience.</span></h2>
         <p class="bw-why-description">We believe a clean environment makes a real difference. Our team delivers reliable cleaning solutions tailored to your space, schedule, and needs.</p>
@@ -472,8 +480,9 @@
         </div>
         <a href="#contact" class="bw-why-btn">Get a Free Quote <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
       </div>
-      <div class="bw-why-visual">
-        <img src="images/cleanplace.webp" alt="BeeWorks cleaner preparing professional cleaning equipment" class="bw-why-image" loading="lazy" width="600" height="500">
+      <div class="bw-why-visual reveal">
+        <img src="images/cleanplace.webp" alt="BeeWorks cleaner preparing professional cleaning equipment"
+             class="bw-why-image" loading="lazy" decoding="async" width="600" height="500">
         <div class="bw-why-badge"><i class="bi bi-shield-check" aria-hidden="true"></i><div><strong>Care in Every Detail</strong><span>Cleaning you can count on</span></div></div>
         <div class="bw-why-decoration"></div>
       </div>
@@ -481,36 +490,36 @@
   </div>
 </section>
 
-<!-- FAQ (NEW — IMPROVES SEO + REDUCES SUPPORT) -->
+<!-- FAQ -->
 <section class="faq-section">
   <div class="container">
     <div class="row g-5 align-items-start">
-      <div class="col-lg-4">
+      <div class="col-lg-4 reveal">
         <span class="section-label">FAQ</span>
         <h2 class="section-title">Questions? <span>We've got answers.</span></h2>
         <p class="section-sub">Everything you need to know before booking BeeWorks.</p>
         <a href="#contact" class="bw-why-btn">Ask us anything <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
       </div>
-      <div class="col-lg-8">
+      <div class="col-lg-8 reveal">
         <div class="accordion" id="faqAccordion">
           <div class="accordion-item">
-            <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">Do I need to be home during cleaning?</button></h3>
+            <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">Do I need to be home during cleaning?</button></h3>
             <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">Not at all. Many of our regular clients provide access instructions (key, lockbox or building concierge). Every cleaner is police-checked and fully insured.</div></div>
           </div>
           <div class="accordion-item">
-            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">What products do you use?</button></h3>
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-controls="faq2">What products do you use?</button></h3>
             <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">We default to low-tox, eco-friendly products that are safe for children and pets. Hospital-grade disinfectants are available on request for medical and childcare clients.</div></div>
           </div>
           <div class="accordion-item">
-            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">Are you insured and police-checked?</button></h3>
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-controls="faq3">Are you insured and police-checked?</button></h3>
             <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Yes. BeeWorks carries $20M public liability insurance, and every team member holds a current national police check. Certificates are available on request.</div></div>
           </div>
           <div class="accordion-item">
-            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">What if I'm not happy with the clean?</button></h3>
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-controls="faq4">What if I'm not happy with the clean?</button></h3>
             <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Contact us within 48 hours and we'll return to re-clean the affected area at no cost. Your satisfaction is our 100% guarantee.</div></div>
           </div>
           <div class="accordion-item">
-            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">Is there a lock-in contract?</button></h3>
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-controls="faq5">Is there a lock-in contract?</button></h3>
             <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">No lock-in contracts. Our regular cleaning plans are week-to-week — pause, adjust or cancel anytime with 48 hours' notice.</div></div>
           </div>
         </div>
@@ -522,14 +531,14 @@
 <!-- CONTACT -->
 <section class="bw-contact" id="contact">
   <div class="container">
-    <div class="bw-contact-heading">
+    <div class="bw-contact-heading reveal">
       <span class="bw-contact-label">LET'S GET STARTED</span>
       <h2>Let's Make Your Space <span>Shine</span></h2>
       <p>Tell us what you need. We reply within 24 hours, Monday to Saturday.</p>
     </div>
 
     <div class="bw-contact-layout">
-      <div class="bw-contact-info">
+      <div class="bw-contact-info reveal">
         <span class="bw-contact-small-title">GET IN TOUCH</span>
         <h3>We're here to help with your cleaning needs.</h3>
         <p class="bw-contact-info-text">Whether you need commercial or residential cleaning, we'd love to hear from you.</p>
@@ -556,11 +565,11 @@
         </div>
       </div>
 
-      <div class="bw-contact-form-wrap">
+      <div class="bw-contact-form-wrap reveal">
         <h3>Request a Free Quote</h3>
         <p class="bw-contact-form-intro">Fill in the form and we'll reply within 24 hours with a fixed-price quote.</p>
 
-        <!-- WIRE THIS to your backend: Netlify Forms, Formspree, or PHP -->
+        <!-- Replace YOUR_FORM_ID with your Formspree ID, or switch to Netlify Forms -->
         <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="bw-contact-form" novalidate>
           <input type="hidden" name="_subject" value="New BeeWorks Quote Request">
           <div class="bw-form-row">
@@ -611,12 +620,12 @@
 
 </main>
 
-<!-- FOOTER (REBUILT) -->
+<!-- FOOTER -->
 <footer class="bw-footer">
   <div class="container">
     <div class="row g-4">
       <div class="col-lg-4">
-        <img src="images/logo.png" alt="BeeWorks" height="50" loading="lazy" class="mb-3">
+        <img src="images/logo.png" alt="BeeWorks" loading="lazy" decoding="async" class="footer-logo">
         <p>Locally owned professional cleaning for homes and businesses across Sydney. Insured, police-checked, and 100% satisfaction guaranteed.</p>
         <div class="footer-social">
           <a href="#" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
@@ -657,9 +666,11 @@
     <hr>
     <div class="footer-bottom">
       <p>© 2025 BeeWorks Cleaning Services Pty Ltd · ABN 00 000 000 000 · All rights reserved.</p>
-      <div>
-        <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a>
-      </div>
+      <div class="footer-legal">
+  <a href="privacy.html">Privacy</a>
+  <span aria-hidden="true">·</span>
+  <a href="terms.html">Terms</a>
+</div>
     </div>
   </div>
 </footer>
@@ -670,11 +681,46 @@
   <a href="#contact" class="quote-btn"><i class="bi bi-chat-dots-fill" aria-hidden="true"></i> Free Quote</a>
 </div>
 
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<!-- Scripts (deferred so they don't block paint) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
 <script>
-  new WOW({ boxClass:'wow', animateClass:'animate__animated', offset:80, mobile:true, live:true }).init();
+  // Native reveal-on-scroll (replaces WOW.js — smaller, faster, no dependency)
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-visible'); });
+      return;
+    }
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(function (el) { observer.observe(el); });
+  })();
+
+  // Smooth in-page anchor scrolling that respects sticky navbar offset
+  (function () {
+    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        var id = link.getAttribute('href');
+        if (id.length < 2) return;
+        var target = document.querySelector(id);
+        if (!target) return;
+        e.preventDefault();
+        var navHeight = document.querySelector('.beeworks-navbar')?.offsetHeight || 0;
+        var top = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 10;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+        // Close mobile menu after nav
+        var collapse = document.getElementById('mainNavbar');
+        if (collapse && collapse.classList.contains('show')) {
+          bootstrap.Collapse.getOrCreateInstance(collapse).hide();
+        }
+      });
+    });
+  })();
 </script>
 </body>
 </html>

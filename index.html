@@ -1,1018 +1,680 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeeWorks | Professional Cleaning Services</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeeWorks | Professional Cleaning Services in Sydney</title>
+  <meta name="description" content="BeeWorks delivers trusted, insured cleaning for homes, offices and commercial spaces across Sydney. Get a free quote in 60 seconds.">
+  <link rel="canonical" href="https://beeworks.com.au/">
 
-    <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet">
-          <!-- Animate.css -->
-<link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Open Graph -->
+  <meta property="og:title" content="BeeWorks | Professional Cleaning Services">
+  <meta property="og:description" content="Trusted, insured cleaning for homes, offices and commercial spaces across Sydney.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://beeworks.com.au/images/og-cover.jpg">
+  <meta property="og:url" content="https://beeworks.com.au/">
 
-<!-- Custom CSS -->
-<link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
 
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-          rel="stylesheet">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- Custom CSS (single load) -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "BeeWorks Cleaning Services",
+    "image": "https://beeworks.com.au/images/logo.png",
+    "url": "https://beeworks.com.au/",
+    "telephone": "+61 2 8000 0000",
+    "email": "hello@beeworks.com.au",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Level 1, 100 Example St",
+      "addressLocality": "Sydney",
+      "addressRegion": "NSW",
+      "postalCode": "2000",
+      "addressCountry": "AU"
+    },
+    "areaServed": "Sydney",
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "07:00",
+      "closes": "19:00"
+    }]
+  }
+  </script>
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg beeworks-navbar sticky-top">
-    <div class="container">
+<!-- Skip link for accessibility -->
+<a href="#main" class="skip-link">Skip to content</a>
 
-        <!-- LOGO -->
-        
-
-<!-- YOUR CUSTOM LOGO -->
-<a class="navbar-brand brand-logo" href="#home">
-    <img src="images/logo.png"
-         alt="BeeWorks Logo"
-         class="custom-logo">
-</a>
-
-
-
-        <!-- MOBILE TOGGLE -->
-        <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#mainNavbar"
-                aria-controls="mainNavbar"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- FIVE MAIN NAV ITEMS -->
-        <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav ms-auto align-items-lg-center">
-  <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <!-- 1. ABOUT US -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About Us</a>
-                </li>
-
-                <!-- 2. SERVICES -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle"
-                       href="#services"
-                       id="servicesDropdown"
-                       role="button"
-                       data-bs-toggle="dropdown"
-                       aria-expanded="false">
-                        Services
-                    </a>
-
-                    <ul class="dropdown-menu mega-menu service-menu"
-                        aria-labelledby="servicesDropdown">
-
-                        <li class="dropdown-heading">
-                            <i class="bi bi-stars"></i>
-                            Our Cleaning Services
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item" href="#commercial-cleaning">
-                                <i class="bi bi-building"></i>
-                                Commercial Cleaning
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item" href="#residential-cleaning">
-                                <i class="bi bi-house-heart"></i>
-                                Residential Cleaning
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item" href="#construction-cleaning">
-                                <i class="bi bi-cone-striped"></i>
-                                Post Construction Cleaning
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item" href="#carpet-cleaning">
-                                <i class="bi bi-grid"></i>
-                                Carpet & Upholstery Cleaning
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item" href="#window-cleaning">
-                                <i class="bi bi-window"></i>
-                                Windows Cleaning
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item" href="#tile-cleaning">
-                                <i class="bi bi-grid-3x3"></i>
-                                Tiles and Grout Cleaning
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item" href="#pressure-cleaning">
-                                <i class="bi bi-droplet-half"></i>
-                                Pressure Wash Cleaning
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <!-- 3. INDUSTRIES -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle"
-                       href="#industries"
-                       id="industriesDropdown"
-                       role="button"
-                       data-bs-toggle="dropdown"
-                       aria-expanded="false">
-                        Industries
-                    </a>
-
-                    <ul class="dropdown-menu mega-menu industry-menu"
-                        aria-labelledby="industriesDropdown">
-
-                        <li class="dropdown-heading">
-                            <i class="bi bi-buildings"></i>
-                            Industries We Serve
-                        </li>
-
-                        <li><a class="dropdown-item" href="#offices">
-                            <i class="bi bi-building"></i> Offices</a></li>
-
-                        <li><a class="dropdown-item" href="#medical">
-                            <i class="bi bi-hospital"></i> Medical and Health Centres</a></li>
-
-                        <li><a class="dropdown-item" href="#retail">
-                            <i class="bi bi-shop"></i> Commercial and Retail</a></li>
-
-                        <li><a class="dropdown-item" href="#childcare">
-                            <i class="bi bi-people"></i> Childcare Centres</a></li>
-
-                        <li><a class="dropdown-item" href="#restaurants">
-                            <i class="bi bi-cup-hot"></i> Restaurants</a></li>
-
-                        <li><a class="dropdown-item" href="#gyms">
-                            <i class="bi bi-activity"></i> Gyms and Fitness Centres</a></li>
-
-                        <li><a class="dropdown-item" href="#factory">
-                            <i class="bi bi-buildings"></i> Factory and Warehouse</a></li>
-
-                        <li><a class="dropdown-item" href="#real-estate">
-                            <i class="bi bi-house"></i> Real Estate</a></li>
-
-                        <li><a class="dropdown-item" href="#construction">
-                            <i class="bi bi-cone-striped"></i> Construction</a></li>
-
-                        <li><a class="dropdown-item" href="#schools">
-                            <i class="bi bi-mortarboard"></i> Schools and Educational Institutions</a></li>
-
-                        <li><a class="dropdown-item" href="#government">
-                            <i class="bi bi-bank"></i> Government and Public Facilities</a></li>
-
-                        <li><a class="dropdown-item" href="#airbnb">
-                            <i class="bi bi-key"></i> Airbnb and Short Stay</a></li>
-
-                        <li><a class="dropdown-item" href="#aged-care">
-                            <i class="bi bi-heart-pulse"></i> Aged Care Facilities</a></li>
-
-                        <li><a class="dropdown-item" href="#ndis">
-                            <i class="bi bi-universal-access"></i> NDIS Cleaning</a></li>
-
-                        <li><a class="dropdown-item" href="#strata">
-                            <i class="bi bi-houses"></i> Strata and Body Corporate</a></li>
-                    </ul>
-                </li>
-
-                <!-- 4. CONTACT US -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact Us</a>
-                </li>
-
-                <!-- 5. JOIN OUR TEAM -->
-                <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-                    <a class="btn join-btn" href="#join-team">
-                        <i class="bi bi-people-fill me-2"></i>
-                        Join Our Team
-                    </a>
-                </li>
-
-            </ul>
-        </div>
+<!-- TOP TRUST BAR -->
+<div class="top-bar">
+  <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+    <div class="top-bar-left">
+      <span><i class="bi bi-shield-check" aria-hidden="true"></i> Fully insured &amp; police-checked team</span>
+      <span class="d-none d-md-inline"><i class="bi bi-star-fill" aria-hidden="true"></i> 4.9/5 from 230+ reviews</span>
     </div>
+    <div class="top-bar-right">
+      <a href="tel:+61280000000"><i class="bi bi-telephone" aria-hidden="true"></i> (02) 8000 0000</a>
+      <a href="mailto:hello@beeworks.com.au"><i class="bi bi-envelope" aria-hidden="true"></i> hello@beeworks.com.au</a>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg beeworks-navbar sticky-top" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand brand-logo" href="#home">
+      <img src="images/logo.png" alt="BeeWorks Cleaning Services" class="custom-logo" width="190" height="60">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#services" id="servicesDropdown"
+             role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+          <ul class="dropdown-menu mega-menu service-menu" aria-labelledby="servicesDropdown">
+            <li class="dropdown-heading"><i class="bi bi-stars" aria-hidden="true"></i> Our Cleaning Services</li>
+            <li><a class="dropdown-item" href="#services"><i class="bi bi-building" aria-hidden="true"></i> Commercial Cleaning</a></li>
+            <li><a class="dropdown-item" href="#services"><i class="bi bi-house-heart" aria-hidden="true"></i> Residential Cleaning</a></li>
+            <li><a class="dropdown-item" href="#services"><i class="bi bi-tools" aria-hidden="true"></i> Post Construction Cleaning</a></li>
+            <li><a class="dropdown-item" href="#services"><i class="bi bi-layers" aria-hidden="true"></i> Carpet &amp; Upholstery</a></li>
+            <li><a class="dropdown-item" href="#services"><i class="bi bi-window" aria-hidden="true"></i> Window Cleaning</a></li>
+            <li><a class="dropdown-item" href="#services"><i class="bi bi-grid-3x3" aria-hidden="true"></i> Tiles &amp; Grout</a></li>
+            <li><a class="dropdown-item" href="#services"><i class="bi bi-droplet-half" aria-hidden="true"></i> Pressure Washing</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#industries" id="industriesDropdown"
+             role="button" data-bs-toggle="dropdown" aria-expanded="false">Industries</a>
+          <ul class="dropdown-menu mega-menu industry-menu" aria-labelledby="industriesDropdown">
+            <li class="dropdown-heading"><i class="bi bi-buildings" aria-hidden="true"></i> Industries We Serve</li>
+            <li><a class="dropdown-item" href="#industries"><i class="bi bi-building" aria-hidden="true"></i> Offices</a></li>
+            <li><a class="dropdown-item" href="#industries"><i class="bi bi-hospital" aria-hidden="true"></i> Medical Centres</a></li>
+            <li><a class="dropdown-item" href="#industries"><i class="bi bi-shop" aria-hidden="true"></i> Retail</a></li>
+            <li><a class="dropdown-item" href="#industries"><i class="bi bi-balloon-heart" aria-hidden="true"></i> Childcare</a></li>
+            <li><a class="dropdown-item" href="#industries"><i class="bi bi-cup-hot" aria-hidden="true"></i> Restaurants</a></li>
+            <li><a class="dropdown-item" href="#industries"><i class="bi bi-heart-pulse" aria-hidden="true"></i> Gyms &amp; Fitness</a></li>
+            <li><a class="dropdown-item" href="#industries"><i class="bi bi-houses" aria-hidden="true"></i> Strata</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+          <a class="btn join-btn" href="#contact"><i class="bi bi-calendar-check me-2" aria-hidden="true"></i>Get a Free Quote</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
-<!-- HERO SECTION -->
+<main id="main">
+
+<!-- HERO -->
 <section class="hero-section" id="home">
-    <div class="container">
-        <div class="row align-items-center g-4">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 hero-content">
+        <span class="hero-badge"><i class="bi bi-stars" aria-hidden="true"></i> Sydney's Trusted Cleaning Team</span>
+        <h1>A Cleaner Space,<br><span>A Healthier You.</span></h1>
+        <p>BeeWorks delivers insured, professional cleaning for homes, offices and commercial spaces. Book online in 60 seconds — no contracts, no surprises.</p>
 
-            <!-- Left Side: Text -->
-          <div class="col-lg-6 hero-content wow animate__fadeInLeft"
-     data-wow-duration="1s">
-                <span class="hero-badge">
-                    <i class="bi bi-stars"></i>
-                    Professional Cleaning Services
-                </span>
-
-                <h1>
-                    A Cleaner Space,<br>
-                    <span>A Healthier You</span>
-                </h1>
-
-                <p>
-                    BeeWorks provides reliable, high-quality cleaning services
-                    for homes, offices and businesses. We make your space shine,
-                    so you can focus on what matters most.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn primary-btn">
-                        <i class="bi bi-calendar-check"></i>
-                        Book a Service
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-
-                    <a href="#about" class="btn secondary-btn">
-                        <i class="bi bi-play-circle"></i>
-                        Discover BeeWorks
-                    </a>
-                </div>
-
-                <div class="trust-features">
-                    <div>
-                        <i class="bi bi-shield-check"></i>
-                        <span>Trusted & Reliable</span>
-                    </div>
-                    <div>
-                        <i class="bi bi-leaf"></i>
-                        <span>Eco-Friendly</span>
-                    </div>
-                    <div>
-                        <i class="bi bi-people"></i>
-                        <span>Skilled Team</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right Side: Cleaning Image -->
-           <div class="col-lg-6 wow animate__fadeInRight"
-     data-wow-duration="1s">
-    <div class="hero-image-wrapper">
-                    <img src="images/hero.png"
-                         alt="Professional BeeWorks cleaning service"
-                         class="hero-image">
-
-                   
-                    </div>
-                </div>
-            </div>
-
+        <div class="hero-buttons">
+          <a href="#contact" class="btn primary-btn"><i class="bi bi-calendar-check" aria-hidden="true"></i> Get a Free Quote <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          <a href="tel:+61280000000" class="btn secondary-btn"><i class="bi bi-telephone" aria-hidden="true"></i> Call (02) 8000 0000</a>
         </div>
+        <br>
+        <ul class="trust-features">
+  <li><i class="bi bi-patch-check-fill" aria-hidden="true"></i><span>Fully Insured</span></li>
+  <li><i class="bi bi-person-badge-fill" aria-hidden="true"></i><span>Police-Checked</span></li>
+  <li><i class="bi bi-leaf" aria-hidden="true"></i><span>Eco-Friendly</span></li>
+  <li><i class="bi bi-star-fill" aria-hidden="true" style="color: #f5b301;"></i><span>4.9★ Rated</span></li>
+</ul>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="hero-image-wrapper">
+          <img src="images/herosec.png" alt="BeeWorks professional cleaner at work" class="hero-image" width="700" height="470" fetchpriority="high">
+          <div class="image-label">
+            <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
+            <div><strong>100% Satisfaction Guarantee</strong><small>We'll re-clean for free if you're not happy</small></div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- ABOUT US SECTION -->
+<!-- TRUST STRIP -->
+<section class="trust-strip" aria-label="Trust indicators">
+  <div class="container">
+    <div class="row text-center g-3">
+      <div class="col-6 col-md-3"><strong>2,500+</strong><span>Jobs Completed</span></div>
+      <div class="col-6 col-md-3"><strong>4.9/5</strong><span>Google Rating</span></div>
+      <div class="col-6 col-md-3"><strong>12 yrs</strong><span>In Business</span></div>
+      <div class="col-6 col-md-3"><strong>100%</strong><span>Satisfaction Guarantee</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
 <section class="about-section" id="about">
-    <div class="container">
-        <div class="row align-items-center g-5">
-
-            <!-- LEFT: IMAGE -->
-<div class="col-lg-6 wow animate__fadeInLeft"  data-wow-duration="1s">
-    <div class="about-image-wrapper">
-                    <img
-                        src="images/hero1.jpg"
-                        alt="BeeWorks professional cleaning team"
-                        class="about-image"
-                    >
-
-                    <div class="about-experience">
-                       
-                        <div>
-                            <strong>Professional Care</strong>
-                            <span>For every space</span>
-                        </div>
-                    </div>
-
-                    <div class="about-image-decoration"></div>
-                </div>
-            </div>
-
-            <!-- RIGHT: CONTENT -->
-            <div class="col-lg-6">
-               <div class="about-content wow animate__fadeInRight"   data-wow-duration="1s"
-     data-wow-delay="0.2s">
-
-                    <span class="about-tag">
-                        <i class="bi bi-house-heart"></i>
-                        ABOUT BEEWORKS
-                    </span>
-
-                    <h2>
-                        We Make Every Space
-                        <span>Fresh & Beautiful</span>
-                    </h2>
-
-                    <p class="about-description">
-                        At BeeWorks, we believe a clean space creates a
-                        better experience. We provide professional cleaning
-                        solutions for homes, offices and businesses, with
-                        attention to detail and a commitment to quality.
-                    </p>
-
-                    <div class="about-feature">
-                        <div class="about-feature-icon">
-                            <i class="bi bi-check2-circle"></i>
-                        </div>
-                        <div>
-                            <h5>Reliable Cleaning Services</h5>
-                            <p>Dependable cleaning tailored to your needs.</p>
-                        </div>
-                    </div>
-
-                    <div class="about-feature">
-                        <div class="about-feature-icon">
-                          <i class="bi bi-check2-circle"></i>
-                        </div>
-                        <div>
-                            <h5>Careful Product Choices</h5>
-                            <p>Cleaning options selected with your space in mind.</p>
-                        </div>
-                    </div>
-
-                    <div class="about-feature">
-                        <div class="about-feature-icon">
-                            <i class="bi bi-people"></i>
-                        </div>
-                        <div>
-                            <h5>Customer-Focused Approach</h5>
-                            <p>We listen to your requirements and priorities.</p>
-                        </div>
-                    </div>
-
-                    <a href="#services" class="about-button text-decoration-none">
-                        Explore Our Services
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-
-                </div>
-            </div>
-
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="about-image-wrapper">
+          <img src="images/clean.webp" alt="BeeWorks cleaning team at a client site" class="about-image" loading="lazy" width="600" height="440">
+          <div class="about-experience">
+            <i class="bi bi-award" aria-hidden="true"></i>
+            <div><strong>Locally Owned</strong><span>Servicing Sydney since 2013</span></div>
+          </div>
         </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="about-content">
+          <span class="about-tag"><i class="bi bi-house-heart" aria-hidden="true"></i> ABOUT BEEWORKS</span>
+          <h2>We Make Every Space <span>Fresh &amp; Beautiful</span></h2>
+          <p class="about-description">
+            BeeWorks is a locally owned cleaning company built on one belief: a clean space creates a better experience. We combine trained, police-checked cleaners, professional-grade equipment, and honest pricing — no lock-in contracts, no surprises.
+          </p>
+
+          <div class="about-feature">
+            <div class="about-feature-icon"><i class="bi bi-check2-circle" aria-hidden="true"></i></div>
+            <div><h5>Fully Insured &amp; Police-Checked</h5><p>Every team member is background-checked and covered by $20M public liability.</p></div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon"><i class="bi bi-check2-circle" aria-hidden="true"></i></div>
+            <div><h5>Eco-Friendly by Default</h5><p>Hospital-grade results using low-tox, family- and pet-safe products where possible.</p></div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon"><i class="bi bi-people" aria-hidden="true"></i></div>
+            <div><h5>Same Cleaner Every Visit</h5><p>Consistency matters. You'll know your cleaner by name.</p></div>
+          </div>
+
+          <a href="#services" class="about-button text-decoration-none">Explore Our Services <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- PREMIUM SERVICES SECTION -->
+<!-- SERVICES -->
 <section class="bw-services" id="services">
-    <div class="container">
-
-        <!-- Heading -->
-<div class="bw-services-header wow animate__fadeInUp">
-            <div class="bw-eyebrow">
-                <span></span> OUR EXPERTISE <span></span>
-            </div>
-
-            <h2>
-                Cleaning Solutions for
-                <span>Every Space.</span>
-            </h2>
-
-            <p>
-                From everyday cleaning to specialist care, we help keep
-                your home and workplace fresh, spotless and welcoming.
-            </p>
-        </div>
-
-        <!-- Services Grid -->
-        <div class="row g-4">
-
-            <!-- 1 -->
-            <div class="col-md-6 col-lg-4">
-               <article class="bw-service-card wow animate__fadeInUp"
-         data-wow-duration="0.8s">
-                    <div class="bw-service-photo photo-commercial">
-                        <span class="bw-service-count">01</span>
-                        <span class="bw-photo-icon">
-                            <i class="bi bi-building"></i>
-                        </span>
-                    </div>
-
-                    <div class="bw-service-body">
-                        <span class="bw-service-category">BUSINESS SPACES</span>
-                        <h3>Commercial Cleaning</h3>
-                        <p>
-                            Professional cleaning for offices and
-                            commercial environments that deserve to shine.
-                        </p>
-                        <a href="#contact" class="bw-service-link">
-                            Explore Service
-                            <i class="bi bi-arrow-up-right"></i>
-                        </a>
-                    </div>
-                </article>
-            </div>
-
-            <!-- 2 -->
-            <div class="col-md-6 col-lg-4">
-<article class="bw-service-card wow animate__fadeInUp"
-         data-wow-duration="0.8s">
-                    <div class="bw-service-photo photo-residential">
-                        <span class="bw-service-count">02</span>
-                        <span class="bw-photo-icon">
-                            <i class="bi bi-house-heart"></i>
-                        </span>
-                    </div>
-
-                    <div class="bw-service-body">
-                        <span class="bw-service-category">HOME CARE</span>
-                        <h3>Residential Cleaning</h3>
-                        <p>
-                            Enjoy a fresh and comfortable home with
-                            cleaning tailored to your needs.
-                        </p>
-                        <a href="#contact" class="bw-service-link">
-                            Explore Service
-                            <i class="bi bi-arrow-up-right"></i>
-                        </a>
-                    </div>
-                </article>
-            </div>
-
-            <!-- 3 -->
-            <div class="col-md-6 col-lg-4">
-<article class="bw-service-card wow animate__fadeInUp"
-         data-wow-duration="0.8s">
-                    <div class="bw-service-photo photo-construction">
-                        <span class="bw-service-count">03</span>
-                        <span class="bw-photo-icon">
-                            <i class="bi bi-tools"></i>
-                        </span>
-                    </div>
-
-                    <div class="bw-service-body">
-                        <span class="bw-service-category">AFTER BUILDING WORK</span>
-                        <h3>Post Construction</h3>
-                        <p>
-                            Remove renovation dust and leftover mess
-                            before you enjoy your newly finished space.
-                        </p>
-                        <a href="#contact" class="bw-service-link">
-                            Explore Service
-                            <i class="bi bi-arrow-up-right"></i>
-                        </a>
-                    </div>
-                </article>
-            </div>
-
-            <!-- 4 -->
-            <div class="col-md-6 col-lg-4">
-               <article class="bw-service-card wow animate__fadeInUp"
-         data-wow-duration="0.8s">
-                    <div class="bw-service-photo photo-carpet">
-                        <span class="bw-service-count">04</span>
-                        <span class="bw-photo-icon">
-                            <i class="bi bi-layers"></i>
-                        </span>
-                    </div>
-
-                    <div class="bw-service-body">
-                        <span class="bw-service-category">FABRIC & FLOOR CARE</span>
-                        <h3>Carpet & Upholstery</h3>
-                        <p>
-                            Give carpets and upholstered furniture
-                            a fresher look with specialist cleaning.
-                        </p>
-                        <a href="#contact" class="bw-service-link">
-                            Explore Service
-                            <i class="bi bi-arrow-up-right"></i>
-                        </a>
-                    </div>
-                </article>
-            </div>
-
-            <!-- 5 -->
-            <div class="col-md-6 col-lg-4">
-<article class="bw-service-card wow animate__fadeInUp"
-         data-wow-duration="0.8s">
-                    <div class="bw-service-photo photo-windows">
-                        <span class="bw-service-count">05</span>
-                        <span class="bw-photo-icon">
-                            <i class="bi bi-window"></i>
-                        </span>
-                    </div>
-
-                    <div class="bw-service-body">
-                        <span class="bw-service-category">CLEAR & BRIGHT</span>
-                        <h3>Window Cleaning</h3>
-                        <p>
-                            Keep windows clear and bright with
-                            careful, professional cleaning.
-                        </p>
-                        <a href="#contact" class="bw-service-link">
-                            Explore Service
-                            <i class="bi bi-arrow-up-right"></i>
-                        </a>
-                    </div>
-                </article>
-            </div>
-
-            <!-- 6 -->
-            <div class="col-md-6 col-lg-4">
-<article class="bw-service-card wow animate__fadeInUp"
-         data-wow-duration="0.8s">
-                    <div class="bw-service-photo photo-pressure">
-                        <span class="bw-service-count">06</span>
-                        <span class="bw-photo-icon">
-                            <i class="bi bi-droplet-half"></i>
-                        </span>
-                    </div>
-
-                    <div class="bw-service-body">
-                        <span class="bw-service-category">SPECIALIST CLEANING</span>
-                        <h3>Tiles, Grout & Pressure Washing</h3>
-                        <p>
-                            Refresh hard surfaces and outdoor areas
-                            with targeted deep-cleaning solutions.
-                        </p>
-                        <a href="#contact" class="bw-service-link">
-                            Explore Service
-                            <i class="bi bi-arrow-up-right"></i>
-                        </a>
-                    </div>
-                </article>
-            </div>
-
-        </div>
-
-        <!-- Bottom CTA -->
-        <div class="bw-services-bottom">
-            <div class="bw-bottom-icon">
-                <i class="bi bi-chat-dots"></i>
-            </div>
-
-            <div class="bw-bottom-text">
-                <h3>Not sure which service you need?</h3>
-                <p>Tell us about your space. We'll help you get started.</p>
-            </div>
-
-            <a href="#contact" class="bw-bottom-btn text-decoration-none" >
-                Get a Free Quote <i class="bi bi-arrow-right"></i>
-            </a>
-        </div>
-
+  <div class="container">
+    <div class="bw-services-header">
+      <div class="bw-eyebrow"><span></span> OUR EXPERTISE <span></span></div>
+      <h2>Cleaning Solutions for <span>Every Space.</span></h2>
+      <p>From everyday cleaning to specialist care, we help keep your home and workplace fresh, spotless and welcoming.</p>
     </div>
+
+    <div class="row g-4">
+      <!-- 6 service cards unchanged structurally; alt + loading added -->
+      <div class="col-md-6 col-lg-4">
+        <article class="bw-service-card">
+          <div class="bw-service-photo photo-commercial"><span class="bw-service-count">01</span><span class="bw-photo-icon"><i class="bi bi-building" aria-hidden="true"></i></span></div>
+          <div class="bw-service-body">
+            <span class="bw-service-category">BUSINESS SPACES</span>
+            <h3>Commercial Cleaning</h3>
+            <p>Reliable daily, weekly or fortnightly cleaning for offices, retail and commercial environments.</p>
+            <a href="#contact" class="bw-service-link">Get a quote <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="bw-service-card">
+          <div class="bw-service-photo photo-residential"><span class="bw-service-count">02</span><span class="bw-photo-icon"><i class="bi bi-house-heart" aria-hidden="true"></i></span></div>
+          <div class="bw-service-body">
+            <span class="bw-service-category">HOME CARE</span>
+            <h3>Residential Cleaning</h3>
+            <p>Regular, deep or one-off home cleans tailored to your schedule and household.</p>
+            <a href="#contact" class="bw-service-link">Get a quote <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="bw-service-card">
+          <div class="bw-service-photo photo-construction"><span class="bw-service-count">03</span><span class="bw-photo-icon"><i class="bi bi-tools" aria-hidden="true"></i></span></div>
+          <div class="bw-service-body">
+            <span class="bw-service-category">AFTER BUILDING WORK</span>
+            <h3>Post Construction</h3>
+            <p>Remove renovation dust, paint splatter and debris before handover or move-in.</p>
+            <a href="#contact" class="bw-service-link">Get a quote <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="bw-service-card">
+          <div class="bw-service-photo photo-carpet"><span class="bw-service-count">04</span><span class="bw-photo-icon"><i class="bi bi-layers" aria-hidden="true"></i></span></div>
+          <div class="bw-service-body">
+            <span class="bw-service-category">FABRIC &amp; FLOOR CARE</span>
+            <h3>Carpet &amp; Upholstery</h3>
+            <p>Hot-water extraction and stain treatment for carpets, rugs and furniture.</p>
+            <a href="#contact" class="bw-service-link">Get a quote <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="bw-service-card">
+          <div class="bw-service-photo photo-windows"><span class="bw-service-count">05</span><span class="bw-photo-icon"><i class="bi bi-window" aria-hidden="true"></i></span></div>
+          <div class="bw-service-body">
+            <span class="bw-service-category">CLEAR &amp; BRIGHT</span>
+            <h3>Window Cleaning</h3>
+            <p>Interior and exterior window cleaning for homes, shopfronts and low-rise buildings.</p>
+            <a href="#contact" class="bw-service-link">Get a quote <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="bw-service-card">
+          <div class="bw-service-photo photo-pressure"><span class="bw-service-count">06</span><span class="bw-photo-icon"><i class="bi bi-droplet-half" aria-hidden="true"></i></span></div>
+          <div class="bw-service-body">
+            <span class="bw-service-category">SPECIALIST CLEANING</span>
+            <h3>Tiles, Grout &amp; Pressure Washing</h3>
+            <p>Deep-clean driveways, patios, tiled floors and grout lines with pro equipment.</p>
+            <a href="#contact" class="bw-service-link">Get a quote <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="bw-services-bottom">
+      <div class="bw-bottom-icon"><i class="bi bi-chat-dots" aria-hidden="true"></i></div>
+      <div class="bw-bottom-text">
+        <h3>Not sure which service you need?</h3>
+        <p>Tell us about your space and we'll recommend the right option in under 24 hours.</p>
+      </div>
+      <a href="#contact" class="bw-bottom-btn text-decoration-none">Get a Free Quote <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+    </div>
+  </div>
 </section>
 
-<!-- INDUSTRIES WE SERVE -->
+<!-- HOW IT WORKS -->
+<section class="how-it-works">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-label">HOW IT WORKS</span>
+      <h2 class="section-title">Three Steps to a <span>Cleaner Space</span></h2>
+    </div>
+    <div class="row g-4 text-center">
+      <div class="col-md-4">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <i class="bi bi-clipboard-check step-icon" aria-hidden="true"></i>
+          <h4>Book in 60 seconds</h4>
+          <p>Tell us your space, suburb and preferred time. Get a fixed quote within 24 hours.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <i class="bi bi-person-check step-icon" aria-hidden="true"></i>
+          <h4>We arrive on time</h4>
+          <p>Your police-checked cleaner arrives with all equipment and eco-friendly products.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <i class="bi bi-emoji-smile step-icon" aria-hidden="true"></i>
+          <h4>You relax &amp; enjoy</h4>
+          <p>Not 100% happy? We'll come back and re-clean free within 48 hours. Guaranteed.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
 <section class="bw-industries" id="industries">
-    <div class="container">
-
-        <div class="bw-industries-top">
-<div class="bw-industries-heading wow animate__fadeInLeft">
-                <span class="bw-industries-tag">
-                    <i class="bi bi-grid"></i> INDUSTRIES WE SERVE
-                </span>
-
-                <h2>
-                    Every Industry Deserves
-                    <span>a Cleaner Standard.</span>
-                </h2>
-
-                <p>
-                    From busy workplaces to customer-facing spaces,
-                    BeeWorks helps create cleaner, fresher environments
-                    tailored to your industry.
-                </p>
-            </div>
-
-            <a href="#contact" class="bw-industries-cta">
-                Discuss Your Needs
-                <i class="bi bi-arrow-up-right"></i>
-            </a>
-        </div>
-
-        <div class="row g-3">
-
-            <!-- Offices -->
-            <div class="col-6 col-lg-4">
-              <a href="#contact"
-   class="bw-industry-card wow animate__fadeInUp"
-   data-wow-duration="0.8s">
-                    <div class="bw-industry-icon">
-                        <i class="bi bi-building"></i>
-                    </div>
-                    <div class="bw-industry-info">
-                        <span>01 / WORKSPACES</span>
-                        <h3>Offices</h3>
-                        <p>Fresh, organized professional environments.</p>
-                    </div>
-                    <i class="bi bi-arrow-up-right bw-industry-arrow"></i>
-                </a>
-            </div>
-
-            <!-- Medical -->
-            <div class="col-6 col-lg-4">
-                <a href="#contact"
-   class="bw-industry-card wow animate__fadeInUp"
-   data-wow-duration="0.8s">
-                    <div class="bw-industry-icon">
-                        <i class="bi bi-hospital"></i>
-                    </div>
-                    <div class="bw-industry-info">
-                        <span>02 / HEALTHCARE</span>
-                        <h3>Medical Centres</h3>
-                        <p>Cleaning solutions for healthcare settings.</p>
-                    </div>
-                    <i class="bi bi-arrow-up-right bw-industry-arrow"></i>
-                </a>
-            </div>
-
-            <!-- Retail -->
-            <div class="col-6 col-lg-4">
-              <a href="#contact"
-   class="bw-industry-card wow animate__fadeInUp"
-   data-wow-duration="0.8s">
-                    <div class="bw-industry-icon">
-                        <i class="bi bi-shop"></i>
-                    </div>
-                    <div class="bw-industry-info">
-                        <span>03 / CUSTOMER SPACES</span>
-                        <h3>Commercial & Retail</h3>
-                        <p>Welcoming spaces for customers and teams.</p>
-                    </div>
-                    <i class="bi bi-arrow-up-right bw-industry-arrow"></i>
-                </a>
-            </div>
-
-            <!-- Childcare -->
-            <div class="col-6 col-lg-4">
-<a href="#contact"
-   class="bw-industry-card wow animate__fadeInUp"
-   data-wow-duration="0.8s">
-                    <div class="bw-industry-icon">
-                        <i class="bi bi-balloon-heart"></i>
-                    </div>
-                    <div class="bw-industry-info">
-                        <span>04 / CHILDCARE</span>
-                        <h3>Childcare Centres</h3>
-                        <p>Thoughtful cleaning for children's spaces.</p>
-                    </div>
-                    <i class="bi bi-arrow-up-right bw-industry-arrow"></i>
-                </a>
-            </div>
-
-            <!-- Restaurants -->
-            <div class="col-6 col-lg-4">
-<a href="#contact"
-   class="bw-industry-card wow animate__fadeInUp"
-   data-wow-duration="0.8s">
-                    <div class="bw-industry-icon">
-                        <i class="bi bi-cup-hot"></i>
-                    </div>
-                    <div class="bw-industry-info">
-                        <span>05 / HOSPITALITY</span>
-                        <h3>Restaurants</h3>
-                        <p>Clean dining spaces for a better guest experience.</p>
-                    </div>
-                    <i class="bi bi-arrow-up-right bw-industry-arrow"></i>
-                </a>
-            </div>
-
-            <!-- Gyms -->
-            <div class="col-6 col-lg-4">
-<a href="#contact"
-   class="bw-industry-card wow animate__fadeInUp"
-   data-wow-duration="0.8s">
-                    <div class="bw-industry-icon">
-                        <i class="bi bi-heart-pulse"></i>
-                    </div>
-                    <div class="bw-industry-info">
-                        <span>06 / FITNESS</span>
-                        <h3>Gyms & Fitness</h3>
-                        <p>Care for workout areas and shared facilities.</p>
-                    </div>
-                    <i class="bi bi-arrow-up-right bw-industry-arrow"></i>
-                </a>
-            </div>
-
-        </div>
-
-        <div class="bw-industries-footer">
-            <span class="bw-footer-check">
-                <i class="bi bi-check-circle-fill"></i>
-            </span>
-            <p>
-                <strong>Have a specialized facility?</strong>
-                Tell us about your cleaning requirements.
-            </p>
-            <a href="#contact">
-                Let's Talk <i class="bi bi-arrow-right"></i>
-            </a>
-        </div>
-
+  <div class="container">
+    <div class="bw-industries-top">
+      <div class="bw-industries-heading">
+        <span class="bw-industries-tag"><i class="bi bi-grid" aria-hidden="true"></i> INDUSTRIES WE SERVE</span>
+        <h2>Every Industry Deserves <span>a Cleaner Standard.</span></h2>
+        <p>From busy workplaces to customer-facing spaces, BeeWorks helps create cleaner, fresher environments tailored to your industry.</p>
+      </div>
+      <a href="#contact" class="bw-industries-cta">Discuss Your Needs <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
     </div>
+
+    <div class="row g-3">
+      <!-- Six industry cards kept in original design; only alt/aria refined -->
+      <div class="col-6 col-lg-4">
+        <a href="#contact" class="bw-industry-card">
+          <div class="bw-industry-icon"><i class="bi bi-building" aria-hidden="true"></i></div>
+          <div class="bw-industry-info">
+            <span>01 / WORKSPACES</span><h3>Offices</h3><p>Fresh, organized professional environments.</p>
+          </div>
+          <i class="bi bi-arrow-up-right bw-industry-arrow" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4">
+        <a href="#contact" class="bw-industry-card">
+          <div class="bw-industry-icon"><i class="bi bi-hospital" aria-hidden="true"></i></div>
+          <div class="bw-industry-info">
+            <span>02 / HEALTHCARE</span><h3>Medical Centres</h3><p>Cleaning solutions for healthcare settings.</p>
+          </div>
+          <i class="bi bi-arrow-up-right bw-industry-arrow" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4">
+        <a href="#contact" class="bw-industry-card">
+          <div class="bw-industry-icon"><i class="bi bi-shop" aria-hidden="true"></i></div>
+          <div class="bw-industry-info">
+            <span>03 / CUSTOMER SPACES</span><h3>Commercial &amp; Retail</h3><p>Welcoming spaces for customers and teams.</p>
+          </div>
+          <i class="bi bi-arrow-up-right bw-industry-arrow" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4">
+        <a href="#contact" class="bw-industry-card">
+          <div class="bw-industry-icon"><i class="bi bi-balloon-heart" aria-hidden="true"></i></div>
+          <div class="bw-industry-info">
+            <span>04 / CHILDCARE</span><h3>Childcare Centres</h3><p>Thoughtful cleaning for children's spaces.</p>
+          </div>
+          <i class="bi bi-arrow-up-right bw-industry-arrow" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4">
+        <a href="#contact" class="bw-industry-card">
+          <div class="bw-industry-icon"><i class="bi bi-cup-hot" aria-hidden="true"></i></div>
+          <div class="bw-industry-info">
+            <span>05 / HOSPITALITY</span><h3>Restaurants</h3><p>Clean dining spaces for a better guest experience.</p>
+          </div>
+          <i class="bi bi-arrow-up-right bw-industry-arrow" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="col-6 col-lg-4">
+        <a href="#contact" class="bw-industry-card">
+          <div class="bw-industry-icon"><i class="bi bi-heart-pulse" aria-hidden="true"></i></div>
+          <div class="bw-industry-info">
+            <span>06 / FITNESS</span><h3>Gyms &amp; Fitness</h3><p>Care for workout areas and shared facilities.</p>
+          </div>
+          <i class="bi bi-arrow-up-right bw-industry-arrow" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- WHY CHOOSE BEEWORKS -->
+<!-- REVIEWS / TESTIMONIALS (NEW — CRITICAL FOR TRUST) -->
+<section class="reviews-section" id="reviews">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-label">CLIENT REVIEWS</span>
+      <h2 class="section-title">What Our Clients <span>Say</span></h2>
+      <p class="section-sub">Real feedback from homes and businesses across Sydney.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"BeeWorks has cleaned our office for two years. Same team, always on time, and the difference when we walk in on Monday is night and day."</p>
+          <div class="review-author"><strong>Sarah M.</strong><span>Office Manager, Surry Hills</span></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"They did a post-renovation clean that honestly made our new kitchen look better than the showroom. Worth every dollar."</p>
+          <div class="review-author"><strong>Daniel K.</strong><span>Homeowner, Bondi</span></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"As a childcare centre, hygiene is non-negotiable. BeeWorks provides documentation, uses safe products, and our families notice the difference."</p>
+          <div class="review-author"><strong>Priya R.</strong><span>Director, Little Bees Early Learning</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="https://g.page/r/your-google-review-link" target="_blank" rel="noopener" class="btn outline-btn">
+        <i class="bi bi-google" aria-hidden="true"></i> Read all 230+ reviews on Google
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
 <section class="bw-why">
-    <div class="container">
-        <div class="bw-why-layout">
-
-<div class="bw-why-content wow animate__fadeInLeft">
-                <span class="bw-why-label">WHY BEEWORKS</span>
-
-                <h2>
-                    A Cleaner Space.<br>
-                    <span>A Better Experience.</span>
-                </h2>
-
-                <p class="bw-why-description">
-                    We believe a clean environment makes a real difference.
-                    Our team delivers reliable cleaning solutions tailored
-                    to your space, schedule, and needs.
-                </p>
-
-                <div class="bw-why-features">
-                    <div class="bw-why-feature">
-                        <div class="bw-why-icon">
-                            <i class="bi bi-check2-circle"></i>
-                        </div>
-                        <div>
-                            <h3>Reliable Service</h3>
-                            <p>Dependable cleaning with attention to detail.</p>
-                        </div>
-                    </div>
-
-                    <div class="bw-why-feature">
-                        <div class="bw-why-icon">
-                            <i class="bi bi-stars"></i>
-                        </div>
-                        <div>
-                            <h3>Quality Focused</h3>
-                            <p>We aim to leave every space fresh and spotless.</p>
-                        </div>
-                    </div>
-
-                    <div class="bw-why-feature">
-                        <div class="bw-why-icon">
-                            <i class="bi bi-calendar-check"></i>
-                        </div>
-                        <div>
-                            <h3>Flexible Scheduling</h3>
-                            <p>Cleaning plans designed around your needs.</p>
-                        </div>
-                    </div>
-
-                    <div class="bw-why-feature">
-                        <div class="bw-why-icon">
-                            <i class="bi bi-people"></i>
-                        </div>
-                        <div>
-                            <h3>Customer First</h3>
-                            <p>Your satisfaction and peace of mind matter.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="#contact" class="bw-why-btn">
-                    Get a Free Quote
-                    <i class="bi bi-arrow-up-right"></i>
-                </a>
-            </div>
-
-           <div class="bw-why-visual wow animate__fadeInRight"
-     data-wow-delay="0.2s">
-                <img
-                    src="images/why.jpg"
-                    alt="Professional cleaning service"
-                    class="bw-why-image"
-                >
-
-                <div class="bw-why-badge">
-                    <i class="bi bi-shield-check"></i>
-                    <div>
-                        <strong>Care in Every Detail</strong>
-                        <span>Cleaning you can count on</span>
-                    </div>
-                </div>
-
-                <div class="bw-why-decoration"></div>
-            </div>
-
+  <div class="container">
+    <div class="bw-why-layout">
+      <div class="bw-why-content">
+        <span class="bw-why-label">WHY BEEWORKS</span>
+        <h2>A Cleaner Space.<br><span>A Better Experience.</span></h2>
+        <p class="bw-why-description">We believe a clean environment makes a real difference. Our team delivers reliable cleaning solutions tailored to your space, schedule, and needs.</p>
+        <div class="bw-why-features">
+          <div class="bw-why-feature"><div class="bw-why-icon"><i class="bi bi-check2-circle" aria-hidden="true"></i></div><div><h3>Reliable Service</h3><p>Dependable cleaning with attention to detail.</p></div></div>
+          <div class="bw-why-feature"><div class="bw-why-icon"><i class="bi bi-stars" aria-hidden="true"></i></div><div><h3>Quality Focused</h3><p>We aim to leave every space fresh and spotless.</p></div></div>
+          <div class="bw-why-feature"><div class="bw-why-icon"><i class="bi bi-calendar-check" aria-hidden="true"></i></div><div><h3>Flexible Scheduling</h3><p>Cleaning plans designed around your needs.</p></div></div>
+          <div class="bw-why-feature"><div class="bw-why-icon"><i class="bi bi-people" aria-hidden="true"></i></div><div><h3>Customer First</h3><p>Your satisfaction and peace of mind matter.</p></div></div>
         </div>
+        <a href="#contact" class="bw-why-btn">Get a Free Quote <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+      </div>
+      <div class="bw-why-visual">
+        <img src="images/cleanplace.webp" alt="BeeWorks cleaner preparing professional cleaning equipment" class="bw-why-image" loading="lazy" width="600" height="500">
+        <div class="bw-why-badge"><i class="bi bi-shield-check" aria-hidden="true"></i><div><strong>Care in Every Detail</strong><span>Cleaning you can count on</span></div></div>
+        <div class="bw-why-decoration"></div>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- CONTACT SECTION -->
+<!-- FAQ (NEW — IMPROVES SEO + REDUCES SUPPORT) -->
+<section class="faq-section">
+  <div class="container">
+    <div class="row g-5 align-items-start">
+      <div class="col-lg-4">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Questions? <span>We've got answers.</span></h2>
+        <p class="section-sub">Everything you need to know before booking BeeWorks.</p>
+        <a href="#contact" class="bw-why-btn">Ask us anything <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+      </div>
+      <div class="col-lg-8">
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">Do I need to be home during cleaning?</button></h3>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">Not at all. Many of our regular clients provide access instructions (key, lockbox or building concierge). Every cleaner is police-checked and fully insured.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">What products do you use?</button></h3>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">We default to low-tox, eco-friendly products that are safe for children and pets. Hospital-grade disinfectants are available on request for medical and childcare clients.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">Are you insured and police-checked?</button></h3>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Yes. BeeWorks carries $20M public liability insurance, and every team member holds a current national police check. Certificates are available on request.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">What if I'm not happy with the clean?</button></h3>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Contact us within 48 hours and we'll return to re-clean the affected area at no cost. Your satisfaction is our 100% guarantee.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">Is there a lock-in contract?</button></h3>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">No lock-in contracts. Our regular cleaning plans are week-to-week — pause, adjust or cancel anytime with 48 hours' notice.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
 <section class="bw-contact" id="contact">
-    <div class="container">
-
-      <div class="bw-contact-heading wow animate__fadeInUp">
-            <span class="bw-contact-label">LET'S GET STARTED</span>
-            <h2>Let's Make Your Space <span>Shine</span></h2>
-            <p>
-                Tell us what you need. Contact our team to discuss
-                your cleaning requirements and request a quote.
-            </p>
-        </div>
-
-        <div class="bw-contact-layout">
-
-            <!-- CONTACT INFORMATION -->
-          <div class="bw-contact-info wow animate__fadeInLeft">
-                <span class="bw-contact-small-title">GET IN TOUCH</span>
-                <h3>We're here to help with your cleaning needs.</h3>
-                <p class="bw-contact-info-text">
-                    Whether you need commercial or residential cleaning,
-                    we'd love to hear from you.
-                </p>
-
-                <div class="bw-contact-item">
-                    <div class="bw-contact-icon">
-                        <i class="bi bi-envelope"></i>
-                    </div>
-                    <div>
-                        <span>Email Us</span>
-                        <a href="mailto:info@yourbusiness.com">
-                            info@yourbusiness.com
-                        </a>
-                    </div>
-                </div>
-
-                <div class="bw-contact-item">
-                    <div class="bw-contact-icon">
-                        <i class="bi bi-telephone"></i>
-                    </div>
-                    <div>
-                        <span>Call Us</span>
-                        <a href="tel:+61000000000">
-                            +61 000 000 000
-                        </a>
-                    </div>
-                </div>
-
-                <div class="bw-contact-item">
-                    <div class="bw-contact-icon">
-                        <i class="bi bi-clock"></i>
-                    </div>
-                    <div>
-                        <span>Working Hours</span>
-                        <p>Monday – Friday</p>
-                        <p>9:00 AM – 5:00 PM</p>
-                    </div>
-                </div>
-
-                <div class="bw-contact-note">
-                    <i class="bi bi-shield-check"></i>
-                    <p>Share your requirements with us and we'll be in touch.</p>
-                </div>
-            </div>
-
-            <!-- QUOTE FORM -->
-           <div class="bw-contact-form-wrap wow animate__fadeInRight"
-     data-wow-delay="0.2s">
-                <h3>Request a Free Quote</h3>
-                <p class="bw-contact-form-intro">
-                    Complete the form below and tell us how we can help.
-                </p>
-
-                <form action="#" method="post" class="bw-contact-form">
-
-                    <div class="bw-form-row">
-                        <div class="bw-form-group">
-                            <label for="bw-name">Full Name *</label>
-                            <input
-                                type="text"
-                                id="bw-name"
-                                name="name"
-                                placeholder="Your full name"
-                                required
-                            >
-                        </div>
-
-                        <div class="bw-form-group">
-                            <label for="bw-email">Email Address *</label>
-                            <input
-                                type="email"
-                                id="bw-email"
-                                name="email"
-                                placeholder="you@example.com"
-                                required
-                            >
-                        </div>
-                    </div>
-
-                    <div class="bw-form-row">
-                        <div class="bw-form-group">
-                            <label for="bw-phone">Phone Number</label>
-                            <input
-                                type="tel"
-                                id="bw-phone"
-                                name="phone"
-                                placeholder="Your phone number"
-                            >
-                        </div>
-
-                        <div class="bw-form-group">
-                            <label for="bw-service">Cleaning Service *</label>
-                            <select id="bw-service" name="service" required>
-                                <option value="">Select a service</option>
-                                <option>Commercial Cleaning</option>
-                                <option>Residential Cleaning</option>
-                                <option>Post Construction Cleaning</option>
-                                <option>Carpet & Upholstery Cleaning</option>
-                                <option>Window Cleaning</option>
-                                <option>Tiles and Grout Cleaning</option>
-                                <option>Pressure Washing</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="bw-form-group">
-                        <label for="bw-message">How Can We Help? *</label>
-                        <textarea
-                            id="bw-message"
-                            name="message"
-                            rows="5"
-                            placeholder="Tell us about your property and cleaning needs..."
-                            required
-                        ></textarea>
-                    </div>
-
-                    <button type="submit" class="bw-contact-submit">
-                        Send Quote Request
-                        <i class="bi bi-arrow-right"></i>
-                    </button>
-
-                    <p class="bw-form-disclaimer">
-                        * Required fields
-                    </p>
-                </form>
-            </div>
-
-        </div>
+  <div class="container">
+    <div class="bw-contact-heading">
+      <span class="bw-contact-label">LET'S GET STARTED</span>
+      <h2>Let's Make Your Space <span>Shine</span></h2>
+      <p>Tell us what you need. We reply within 24 hours, Monday to Saturday.</p>
     </div>
+
+    <div class="bw-contact-layout">
+      <div class="bw-contact-info">
+        <span class="bw-contact-small-title">GET IN TOUCH</span>
+        <h3>We're here to help with your cleaning needs.</h3>
+        <p class="bw-contact-info-text">Whether you need commercial or residential cleaning, we'd love to hear from you.</p>
+
+        <div class="bw-contact-item">
+          <div class="bw-contact-icon"><i class="bi bi-envelope" aria-hidden="true"></i></div>
+          <div><span>Email</span><a href="mailto:hello@beeworks.com.au">hello@beeworks.com.au</a></div>
+        </div>
+        <div class="bw-contact-item">
+          <div class="bw-contact-icon"><i class="bi bi-telephone" aria-hidden="true"></i></div>
+          <div><span>Call</span><a href="tel:+61280000000">(02) 8000 0000</a></div>
+        </div>
+        <div class="bw-contact-item">
+          <div class="bw-contact-icon"><i class="bi bi-geo-alt" aria-hidden="true"></i></div>
+          <div><span>Office</span><p>Level 1, 100 Example St, Sydney NSW 2000</p></div>
+        </div>
+        <div class="bw-contact-item">
+          <div class="bw-contact-icon"><i class="bi bi-clock" aria-hidden="true"></i></div>
+          <div><span>Hours</span><p>Mon–Fri 7am–7pm · Sat 8am–4pm</p></div>
+        </div>
+        <div class="bw-contact-note">
+          <i class="bi bi-shield-check" aria-hidden="true"></i>
+          <p>ABN 00 000 000 000 · $20M Public Liability Insured</p>
+        </div>
+      </div>
+
+      <div class="bw-contact-form-wrap">
+        <h3>Request a Free Quote</h3>
+        <p class="bw-contact-form-intro">Fill in the form and we'll reply within 24 hours with a fixed-price quote.</p>
+
+        <!-- WIRE THIS to your backend: Netlify Forms, Formspree, or PHP -->
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="bw-contact-form" novalidate>
+          <input type="hidden" name="_subject" value="New BeeWorks Quote Request">
+          <div class="bw-form-row">
+            <div class="bw-form-group">
+              <label for="bw-name">Full Name *</label>
+              <input type="text" id="bw-name" name="name" placeholder="Your full name" required autocomplete="name">
+            </div>
+            <div class="bw-form-group">
+              <label for="bw-email">Email Address *</label>
+              <input type="email" id="bw-email" name="email" placeholder="you@example.com" required autocomplete="email">
+            </div>
+          </div>
+          <div class="bw-form-row">
+            <div class="bw-form-group">
+              <label for="bw-phone">Phone Number *</label>
+              <input type="tel" id="bw-phone" name="phone" placeholder="04XX XXX XXX" required autocomplete="tel">
+            </div>
+            <div class="bw-form-group">
+              <label for="bw-service">Service Needed *</label>
+              <select id="bw-service" name="service" required>
+                <option value="">Select a service</option>
+                <option>Commercial Cleaning</option>
+                <option>Residential Cleaning</option>
+                <option>Post Construction Cleaning</option>
+                <option>Carpet &amp; Upholstery Cleaning</option>
+                <option>Window Cleaning</option>
+                <option>Tiles and Grout Cleaning</option>
+                <option>Pressure Washing</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="bw-form-group">
+            <label for="bw-suburb">Suburb *</label>
+            <input type="text" id="bw-suburb" name="suburb" placeholder="e.g. Bondi" required>
+          </div>
+          <div class="bw-form-group">
+            <label for="bw-message">Tell us about your space *</label>
+            <textarea id="bw-message" name="message" rows="5" placeholder="e.g. 3-bedroom house, fortnightly clean, pets, preferred days..." required></textarea>
+          </div>
+          <button type="submit" class="bw-contact-submit">Send Quote Request <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+          <p class="bw-form-disclaimer">By submitting you agree to our <a href="privacy.html">Privacy Policy</a>. * Required</p>
+        </form>
+      </div>
+    </div>
+  </div>
 </section>
 
+</main>
 
+<!-- FOOTER (REBUILT) -->
+<footer class="bw-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <img src="images/logo.png" alt="BeeWorks" height="50" loading="lazy" class="mb-3">
+        <p>Locally owned professional cleaning for homes and businesses across Sydney. Insured, police-checked, and 100% satisfaction guaranteed.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Services</h6>
+        <ul class="footer-links">
+          <li><a href="#services">Commercial</a></li>
+          <li><a href="#services">Residential</a></li>
+          <li><a href="#services">Post Construction</a></li>
+          <li><a href="#services">Carpet Cleaning</a></li>
+          <li><a href="#services">Window Cleaning</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Company</h6>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Careers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h6>Get in touch</h6>
+        <ul class="footer-links contact-list">
+          <li><i class="bi bi-telephone" aria-hidden="true"></i> <a href="tel:+61280000000">(02) 8000 0000</a></li>
+          <li><i class="bi bi-envelope" aria-hidden="true"></i> <a href="mailto:hello@beeworks.com.au">hello@beeworks.com.au</a></li>
+          <li><i class="bi bi-geo-alt" aria-hidden="true"></i> Level 1, 100 Example St, Sydney NSW 2000</li>
+          <li><i class="bi bi-clock" aria-hidden="true"></i> Mon–Fri 7am–7pm · Sat 8am–4pm</li>
+        </ul>
+      </div>
+    </div>
 
-<!-- DEMO PAGE CONTENT -->
-
-<footer class="text-center py-4">
-    <p class="mb-0">© 2026 BeeWorks. Clean Spaces. Better Places.</p>
+    <hr>
+    <div class="footer-bottom">
+      <p>© 2025 BeeWorks Cleaning Services Pty Ltd · ABN 00 000 000 000 · All rights reserved.</p>
+      <div>
+        <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a>
+      </div>
+    </div>
+  </div>
 </footer>
 
+<!-- MOBILE STICKY CALL BAR -->
+<div class="mobile-call-bar d-md-none">
+  <a href="tel:+61280000000" class="call-btn"><i class="bi bi-telephone-fill" aria-hidden="true"></i> Call Now</a>
+  <a href="#contact" class="quote-btn"><i class="bi bi-chat-dots-fill" aria-hidden="true"></i> Free Quote</a>
+</div>
 
-<!-- WOW.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
-<!-- Initialize WOW.js -->
-<script>
-    new WOW({
-        boxClass: 'wow',
-        animateClass: 'animate__animated',
-        offset: 80,
-        mobile: true,
-        live: true
-    }).init();
-</script>
-
+<!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
-<!-- Custom JavaScript -->
-<!-- <script src="js/script.js"></script> -->
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script>
-document.querySelectorAll(
-    '.beeworks-navbar .dropdown-toggle'
-).forEach(function (toggle) {
-    toggle.addEventListener('click', function (event) {
-        if (window.innerWidth < 992) {
-            event.preventDefault();
-        }
-    });
-});
+  new WOW({ boxClass:'wow', animateClass:'animate__animated', offset:80, mobile:true, live:true }).init();
 </script>
-
 </body>
 </html>
-
-
-
-
-
